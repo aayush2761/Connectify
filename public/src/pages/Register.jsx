@@ -65,7 +65,7 @@ export default function Register() {
 		event.preventDefault();
 		if (handleValidation()) {
 			const { email, username, password } = values;
-			const { data } = await axios.post('https://connectify-pearl.vercel.app/registerRoute' ,registerRoute, {
+			const { data } = await axios.post('https://connectify-pearl.vercel.app/Register' ,registerRoute, {
 				username,
 				email,
 				password,
