@@ -44,7 +44,7 @@ export default function Login() {
 		event.preventDefault();
 		if (validateForm()) {
 			const { username, password } = values;
-			const { data } = await axios.post( 'https://connectify-pearl.vercel.app/loginRoute' ,loginRoute, {
+			const { data } = await axios.post( 'https://connectify-pearl.vercel.app/Login' ,loginRoute, {
 				username,
 				password,
 			});
